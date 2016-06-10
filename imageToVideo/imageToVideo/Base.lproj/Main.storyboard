@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="imageToVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I1l-Ke-BsP">
+                                <rect key="frame" x="50" y="70" width="500" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="OaI-86-cEx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4Y-zu-hMK">
+                                <rect key="frame" x="40" y="389" width="520" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ed9-iL-RI8"/>
+                                </constraints>
+                                <state key="normal" title="Image To Video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPrssimgToVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tF0-hv-XRs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6r-1J-Q94">
+                                <rect key="frame" x="40" y="444" width="520" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sNQ-gp-5EG"/>
+                                </constraints>
+                                <state key="normal" title="Merge images">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPrssVideoMerge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gl0-oZ-jyu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIt-hQ-UVy">
+                                <rect key="frame" x="40" y="502" width="520" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Add text to video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPrssAddtextToVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YWN-df-eCh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c4Y-zu-hMK" secondAttribute="trailing" constant="40" id="3AN-hG-PFq"/>
+                            <constraint firstItem="m6r-1J-Q94" firstAttribute="top" secondItem="c4Y-zu-hMK" secondAttribute="bottom" constant="15" id="3YD-WH-r7s"/>
+                            <constraint firstItem="ZIt-hQ-UVy" firstAttribute="centerX" secondItem="m6r-1J-Q94" secondAttribute="centerX" id="BpM-Kb-2XL"/>
+                            <constraint firstItem="c4Y-zu-hMK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="Jf5-E5-gDg"/>
+                            <constraint firstItem="ZIt-hQ-UVy" firstAttribute="top" secondItem="m6r-1J-Q94" secondAttribute="bottom" constant="18" id="P7C-ef-ODU"/>
+                            <constraint firstItem="ZIt-hQ-UVy" firstAttribute="height" secondItem="m6r-1J-Q94" secondAttribute="height" id="PvL-E5-TXK"/>
+                            <constraint firstItem="I1l-Ke-BsP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="PxC-Zz-LZk"/>
+                            <constraint firstAttribute="trailing" secondItem="m6r-1J-Q94" secondAttribute="trailing" constant="40" id="RXT-sN-iZL"/>
+                            <constraint firstItem="m6r-1J-Q94" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="bcO-qW-WGO"/>
+                            <constraint firstItem="I1l-Ke-BsP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="e8z-uw-C4v"/>
+                            <constraint firstAttribute="trailing" secondItem="I1l-Ke-BsP" secondAttribute="trailing" constant="50" id="j1L-39-uPB"/>
+                            <constraint firstItem="c4Y-zu-hMK" firstAttribute="top" secondItem="I1l-Ke-BsP" secondAttribute="bottom" constant="19" id="tgF-JC-Uja"/>
+                            <constraint firstItem="ZIt-hQ-UVy" firstAttribute="width" secondItem="m6r-1J-Q94" secondAttribute="width" id="zdh-uv-Mv2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="I1l-Ke-BsP" id="6WI-ou-Sf9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
